@@ -3,25 +3,26 @@ body {
     font-family: Arial, Helvetica, sans-serif;
   }
 
-  @font-face {
-    font-family: myFirstFont;
-    src: url("/assets/fonts/HennyPenny-Regular.ttf");
-  }
-
   header {
     background-color: #232d36;
-    height: 35px;
+    height: 40px;
+    text-align: left;
+    padding: 0px 20px;
   }
 
-  header a {
+  .pageName {
+    text-decoration: none;
+    color: #f2f2f2;
+  }
+
+  .logo {
     font-size: x-large;
     font-weight: lighter;
     font-style: italic;
     font-family: myFirstFont;
     color: #f2f2f2;
-    text-align: left;
     text-decoration: none;
-    padding: 20px;
+    padding: 0px 0px 0px 1200px;
   }
   
   /* Style the top navigation bar */
@@ -37,7 +38,7 @@ body {
     color: #f2f2f2;
     font-size: 30px;
     text-align: center;
-    padding: 10px 147px;
+    padding: 10px 147.65px;
     text-decoration: none;
   }
   
@@ -48,7 +49,6 @@ body {
   }
   
   main {
-    background-color: white;
     display: inline-block; /* a befogadó elem mérete igazodjék a benne lévő elemek méretéhez */
   }
 
@@ -56,6 +56,7 @@ body {
   .container {
     position: relative;
     text-align: center;
+    display: inline-block;
   }
   
   .container .intro {
@@ -96,6 +97,7 @@ body {
 
   .inner {
     position: relative;
+    display: inline-block;
   }
   
   .inner .text {
@@ -123,15 +125,8 @@ body {
     color: #232d36;
   }
 
-  @media screen and (max-width: 776px) {
-    .portfolio .work {
-      width: 100%
-    }
-  }
-
   .gallery {
     padding: 60px;
-    text-align: center;
     background-color: whitesmoke;
     display: inline-block;
   }
@@ -153,12 +148,6 @@ body {
     margin: 10px;
     float: left;
     display: block;
-  }
-
-  @media screen and (max-width: 776px) {
-    .gallery .img {
-      width: 100%
-    }
   }
 
   .introduction {
@@ -224,7 +213,7 @@ body {
   }
 
   #submit {
-    background-color: #2d85f8;
+    background-color: #3071c7;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -247,4 +236,33 @@ body {
     border: none;
     font-size: x-large;
     cursor: pointer;
+    color: #f2f2f2;
+  }
+
+
+  /* Moblie view: */
+  @media screen and (max-width: 576px) {
+    .portfolio .work {
+      width: 100%
+    }
+
+    .gallery .img {
+      width: 100%
+    }
+  }
+
+  /* Tablet view: */
+  @media screen and (min-width: 577px) and (max-width: 768px) {
+    .portfolio .work {
+      width: 100%
+    }
+
+    .gallery .img {
+      width: 100%
+    }
+  }
+
+  @font-face {
+    font-family: myFirstFont;
+    src: url("/assets/fonts/HennyPenny-Regular.ttf");
   }

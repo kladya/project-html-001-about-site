@@ -13,7 +13,7 @@ body {
     background-color: #232d36;
     height: 40px;
     text-align: left;
-    padding: 0px 20px;
+    padding: 0 20px
   }
 
   .pageName {
@@ -28,7 +28,7 @@ body {
     font-family: myFirstFont;
     color: #f2f2f2;
     text-decoration: none;
-    padding: 0px 0px 0px 1200px;
+    padding: 0 0 0 1200px;
   }
   
   /* Style the top navigation bar */
@@ -71,7 +71,6 @@ body {
   .intro {
     position: absolute;
     top: 300px;
-    background: rgb(0, 0, 0); /* Fallback color */
     background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
     font-size: xx-large;
     color: white

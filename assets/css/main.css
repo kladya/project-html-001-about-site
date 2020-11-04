@@ -1,6 +1,6 @@
 @font-face {
   font-family: myFirstFont;
-  src: url("/assets/fonts/HennyPenny-Regular.ttf");
+  src: url("fonts/HennyPenny-Regular.ttf");
 }
 
 body {

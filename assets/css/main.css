@@ -257,7 +257,16 @@ body {
     border: none;
     font-size: x-large;
     cursor: pointer;
+  }
+
+  .menu-button a {
     color: #f2f2f2;
+    text-decoration: none;
+  }
+
+  .menu-button a:hover {
+    background-color: #ddd;
+    color: black;
   }
 
   /* Tablet view. */

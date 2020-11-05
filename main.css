@@ -1,6 +1,7 @@
 @font-face {
   font-family: myFirstFont;
-  src: url("fonts/HennyPenny-Regular.ttf");
+  src: url("fonts/HennyPenny-Regular.ttf");   /* url-nek a css fájltól kell kiindulnia! 
+                                                 + ne legyen az elején "/" jel, különben nem jeleníti meg a GitHub preview */
 }
 
 body {
@@ -69,18 +70,22 @@ body {
   }
 
   /* Home page */
-
+  
   /* Container holding the image and the text */
   .intro-container {
-    position: relative;
     text-align: center;
     display: inline-block;
+    position: relative;
+
+    /* ezt csak azért kell beletenni, hogy ne hagyjon alatta fehér csíkot: */
+    background-image: url("images/portfairy.jpg");
+    background-size: cover;
   }
   
   .intro {
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
     position: absolute;
     top: 30%;
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
     font-size: 2em;
     color: white
   }
@@ -98,6 +103,9 @@ body {
     background-color: lightblue;
     padding: 3em;
     display: inline-block;
+
+    /* ezt csak azért kell beletenni, hogy ne hagyjon alatta fehér csíkot: */
+    margin-bottom: -1em;
   }
 
   .qualities .content {
@@ -113,9 +121,12 @@ body {
 
   .img-container {
     position: relative;
-    display: inline-block;
+
+    /* ezt csak azért kell beletenni, hogy ne hagyjon alatta fehér csíkot: */
+    background-image: url("images/kangaroo.jpg");
+    background-size: cover;
   }
-  
+
   .img-container .text {
     position: absolute;
     top: 6em;
@@ -130,7 +141,6 @@ body {
   .portfolio {
     margin-top: 50px;
     display: inline-block;
-    
   }
 
   .projects .work {
